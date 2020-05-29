@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from 'react';
 import UserContext from '../context/user-context';
 import { IAccessTokenContext } from '../context/access-token-context';
 import { getAccessTokenFromCache, ensureClient } from '../utils/auth0';
-import Auth0Context, { LoginOptions, AccessTokenRequestOptions } from '../context/auth0-context';
+import Auth0Context, { LoginOptions, AccessTokenRequestOptions, LogoutOptions } from '../context/auth0-context';
 
 export interface UseAuthResult {
   /**
@@ -46,7 +46,7 @@ function initialState(): IAccessTokenContext {
   return {
     accessToken: null,
     error: null,
-    isLoading: false
+    isLoading: true
   };
 }
 

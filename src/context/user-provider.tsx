@@ -33,7 +33,7 @@ function initialState(): IUserContext {
     user: null,
     error: null,
     isAuthenticated: false,
-    isLoading: false
+    isLoading: true
   };
 }
 

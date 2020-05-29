@@ -25,6 +25,6 @@ export interface IUserContext {
 export default createContext<IUserContext>({
   user: null,
   error: null,
-  isLoading: false,
+  isLoading: true,
   isAuthenticated: false
 });

@@ -5,7 +5,7 @@ function initialState(args) {
   return {
     response: null,
     error: null,
-    isLoading: false,
+    isLoading: true,
     ...args
   };
 }
